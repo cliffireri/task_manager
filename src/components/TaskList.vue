@@ -41,7 +41,7 @@
                         <th scope="row">{{ todo.id }}</th>
                         <td>{{ todo.title }}</td>
                         <td>{{ todo.description }}</td>
-                        <td>{{ todo.due_at }}</td>
+                        <td>{{ todo.due_date }}</td>
                     </tr>
                 </tbody>
             </table>
@@ -83,8 +83,7 @@ export default {
               id: this.id,
               title: this.todoTitle,
               description: this.todoDescription,
-              due_date: this.todoDueDate,
-              due_date: moment
+              due_date: this.todoDueDate
           })
           
           this.id++
